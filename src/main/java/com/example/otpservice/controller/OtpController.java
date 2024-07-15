@@ -27,4 +27,9 @@ public class OtpController {
     public void sendCustomEmail(@RequestBody CustomEmailRequest emailRequest) {
         otpService.sendCustomEmail(emailRequest);
     }
+
+    @GetMapping("/")
+    public String trial(){
+        return "Welcome to OTPMAIL91 API";
+    }
 }
