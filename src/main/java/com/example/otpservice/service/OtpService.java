@@ -26,7 +26,7 @@ public class OtpService {
         String otp = generateRandomOtp();
         otpStore.put(email, otp);
         sendOtpEmail(email, otp);
-        return otp;
+        return "OTP Sent successfully";
     }
 
     private String generateRandomOtp() {
