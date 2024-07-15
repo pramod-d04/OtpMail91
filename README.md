@@ -1,4 +1,4 @@
-Here's a detailed `README.md` file for the project:
+Here's the enhanced and refactored `README.md` file for your GitHub project, reflecting the deployment on Google Cloud:
 
 ```markdown
 # OTP Service
@@ -51,6 +51,8 @@ This is a Spring Boot application that provides an API for generating and verify
 
 ## API Endpoints
 
+The API is deployed on Google Cloud. The base URL for the endpoints is `https://enhanced-rite-419417.el.r.appspot.com`.
+
 ### Generate OTP
 
 **Endpoint:** `/api/otp/send`
@@ -73,7 +75,7 @@ This is a Spring Boot application that provides an API for generating and verify
 
 **Example `curl` Command:**
 ```bash
-curl -X POST "http://localhost:8080/api/otp/send" \
+curl -X POST "https://enhanced-rite-419417.el.r.appspot.com/api/otp/send" \
 -H "Content-Type: application/json" \
 -d '{"email":"test@example.com"}'
 ```
@@ -99,7 +101,7 @@ true
 
 **Example `curl` Command:**
 ```bash
-curl -X POST "http://localhost:8080/api/otp/verify" \
+curl -X POST "https://enhanced-rite-419417.el.r.appspot.com/api/otp/verify" \
 -H "Content-Type: application/json" \
 -d '{"email":"test@example.com", "otp":"12AB34"}'
 ```
@@ -122,7 +124,7 @@ curl -X POST "http://localhost:8080/api/otp/verify" \
 
 **Example `curl` Command:**
 ```bash
-curl -X POST "http://localhost:8080/api/msg/send-custom-email" \
+curl -X POST "https://enhanced-rite-419417.el.r.appspot.com/api/msg/send-custom-email" \
 -H "Content-Type: application/json" \
 -d '{
   "toEmail": "recipient@example.com",
@@ -165,4 +167,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Java Mail Sender](https://javaee.github.io/javamail/)
 ```
 
-This `README.md` provides a comprehensive guide to setting up and using the OTP service project, including detailed instructions on configuring the application, API endpoint descriptions, and example `curl` commands for testing the endpoints. Adjust any placeholders (e.g., `yourusername`, email server settings) to match your specific details.
+Adjust any placeholders (e.g., `yourusername`, email server settings) to match your specific details. This `README.md` file provides a comprehensive guide to setting up and using the OTP service project, including updated instructions for the deployed API on Google Cloud.
