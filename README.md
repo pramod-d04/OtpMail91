@@ -3,7 +3,7 @@ Here's the enhanced and refactored `README.md` file for your GitHub project, ref
 ```markdown
 # OTP Service
 
-This is a Spring Boot application that provides an API for generating and verifying OTPs (One-Time Passwords) and sending custom emails. The OTP format consists of two numbers, followed by two capital letters, and then two more numbers (e.g., `12AB34`).
+OtpMail91 is a Spring Boot application that provides an API for generating and verifying OTPs (One-Time Passwords) and sending custom emails. The OTP format consists of two numbers, followed by two capital letters, and then two more numbers (e.g., `12AB34`).
 
 ## Features
 
