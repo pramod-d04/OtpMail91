@@ -1,4 +1,3 @@
-Sure, here's the updated `README.md` file with a section on how to contribute to the project:
 
 ```markdown
 # OTP Service
@@ -198,5 +197,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Java Mail Sender](https://javaee.github.io/javamail/)
 ```
-
-This addition provides clear steps for contributing to the project, making it easier for others to collaborate.
