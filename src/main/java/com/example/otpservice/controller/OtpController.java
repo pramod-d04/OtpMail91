@@ -4,6 +4,7 @@ import com.example.otpservice.model.CustomEmailRequest;
 import com.example.otpservice.model.Otp;
 import com.example.otpservice.service.OtpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -24,8 +25,11 @@ public class OtpController {
     }
 
     @PostMapping("/msg/send-custom-email")
-    public void sendCustomEmail(@RequestBody CustomEmailRequest emailRequest) {
+    @CrossOrigin(origins = "http://localhost:3000")
+    public ResponseEntity<Object> sendCustomEmail(@RequestBody CustomEmailRequest emailRequest) {
+        System.out.println("→ sendCustomEmail payload: " + emailRequest);
         otpService.sendCustomEmail(emailRequest);
+        return ResponseEntity.ok().build();
     }
 
     @GetMapping("/")
